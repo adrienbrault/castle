@@ -40,7 +40,7 @@ set colorcolumn=81      " Draw a line on the 81th column
 
 " Dislay hidden chars, and configure what's shown
 set list
-set listchars=trail:◃,nbsp:•
+set listchars=trail:◃,nbsp:•,tab:>-
 
 set encoding=utf8
 set ff=unix
