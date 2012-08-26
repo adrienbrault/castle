@@ -1,5 +1,15 @@
 [user]
-	name = Adrien Brault
-	email = adrien.brault@gmail.com
+    name = Adrien Brault
+    email = adrien.brault@gmail.com
 [core]
-	excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore_global
+[alias]
+    st = status
+    cm = commit
+    co = checkout
+[color]
+    ui           = auto
+    branch       = auto
+    diff         = auto
+    status       = auto
+    interactive  = auto
