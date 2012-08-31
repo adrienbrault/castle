@@ -10,7 +10,7 @@ call vundle#rc()
 
 " Bundles
 Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'croaker/mustang-vim'
 Bundle 'repos-scala/scala-vundle'
 
 "
@@ -25,9 +25,8 @@ set title
 syntax on               " Syntax highlighting
 
 " Nice theme
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+set term=xterm-256color " Required otherwise colorschemes may not work with iTerm2
+colorscheme mustang
 
 filetype on             " try to detect filetypes
 filetype plugin on      " enable loading plugin file for filetype
