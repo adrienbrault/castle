@@ -11,6 +11,7 @@ call vundle#rc()
 " Bundles
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'repos-scala/scala-vundle'
 
 "
 " Configuration
