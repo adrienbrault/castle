@@ -41,7 +41,7 @@ set colorcolumn=120     " Draw a line on the 120th column
 
 " Dislay hidden chars, and configure what's shown
 set list
-set listchars=trail:◃,nbsp:•,tab:>-
+set listchars=trail:·,nbsp:×,tab:❘-,extends:»,precedes:«
 
 set encoding=utf8
 set ff=unix
