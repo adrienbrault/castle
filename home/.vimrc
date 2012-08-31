@@ -12,6 +12,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'repos-scala/scala-vundle'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 "
 " Configuration
@@ -57,6 +58,12 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set smarttab
+
+" Indent guides plugin
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=black
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
+autocmd VimEnter,Colorscheme * :let g:indent_guides_guide_size = 1
 
 " Disable arrow keys
 nnoremap <UP>    <NOP>
