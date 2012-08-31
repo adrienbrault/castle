@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'repos-scala/scala-vundle'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'scrooloose/nerdtree'
 
 "
 " Configuration
@@ -64,6 +65,9 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=black
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
 autocmd VimEnter,Colorscheme * :let g:indent_guides_guide_size = 1
+
+" Mapping
+map <leader>k :NERDTreeToggle<CR>
 
 " Disable arrow keys
 nnoremap <UP>    <NOP>
