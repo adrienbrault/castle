@@ -14,6 +14,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'repos-scala/scala-vundle'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'wincent/Command-T'
 
 "
 " Configuration
