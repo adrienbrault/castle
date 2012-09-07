@@ -16,6 +16,17 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'wincent/Command-T'
+Bundle 'tsaleh/vim-align'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'mileszs/ack.vim'
+Bundle 'Raimondi/delimitMate'
+Bundle 'corntrace/bufexplorer'
+
+ " PHP
+Bundle 'arnaud-lb/vim-php-namespace'
+Bundle 'docteurklein/vim-symfony'
 
 "
 " Configuration
@@ -72,12 +83,12 @@ autocmd VimEnter,Colorscheme * :let g:indent_guides_guide_size = 1
 map <leader>k :NERDTreeToggle<CR>
 
 " Disable arrow keys
-nnoremap <UP>    <NOP>
-nnoremap <DOWN>  <NOP>
-nnoremap <LEFT>  <NOP>
-nnoremap <RIGHT> <NOP>
-inoremap <UP>    <NOP>
-inoremap <DOWN>  <NOP>
-inoremap <LEFT>  <NOP>
-inoremap <RIGHT> <NOP>
+"nnoremap <UP>    <NOP>
+"nnoremap <DOWN>  <NOP>
+"nnoremap <LEFT>  <NOP>
+"nnoremap <RIGHT> <NOP>
+"inoremap <UP>    <NOP>
+"inoremap <DOWN>  <NOP>
+"inoremap <LEFT>  <NOP>
+"inoremap <RIGHT> <NOP>
 
