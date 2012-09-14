@@ -73,6 +73,15 @@ set shiftwidth=4
 set tabstop=4
 set smarttab
 
+set hlsearch            " Highlight all search pattern matches
+set incsearch           " Show search matches as you type
+
+" The 70s has ended, no backup/swap files needed anymore
+set nobackup
+set noswapfile
+
+inoremap <C-Return> <CR><CR><C-o>k<Tab>
+
 " Indent guides plugin
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=black
@@ -81,6 +90,12 @@ autocmd VimEnter,Colorscheme * :let g:indent_guides_guide_size = 1
 
 " Mapping
 map <leader>k :NERDTreeToggle<CR>
+
+" Easy window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " Disable arrow keys
 "nnoremap <UP>    <NOP>
