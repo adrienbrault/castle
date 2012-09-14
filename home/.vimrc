@@ -23,10 +23,22 @@ Bundle 'vim-scripts/taglist.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'corntrace/bufexplorer'
+Bundle 'tpope/vim-surround'
+Bundle 'ervandew/supertab'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdcommenter'
+
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/snipmate-snippets'
 
  " PHP
 Bundle 'arnaud-lb/vim-php-namespace'
 Bundle 'docteurklein/vim-symfony'
+
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'beyondwords/vim-twig'
 
 "
 " Configuration

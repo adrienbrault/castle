@@ -6,7 +6,7 @@ CASE_SENSITIVE="true"
 # Disable autocorrection
 unsetopt correct_all
 
-plugins=(git vi-mode symfony2 github node osx screen sublime vagrant)
+plugins=(vi-mode symfony2 github node osx screen sublime vagrant)
 
 export PATH="/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export PATH="/usr/local/go/bin:$PATH"
