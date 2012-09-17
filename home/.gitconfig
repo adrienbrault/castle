@@ -7,9 +7,16 @@
     st = status
     cm = commit
     co = checkout
+	d = difftool
 [color]
     ui           = auto
     branch       = auto
     diff         = auto
     status       = auto
     interactive  = auto
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
