@@ -13,3 +13,5 @@ export PATH="/usr/local/go/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
+export MANPAGER="col -b | view -c 'set ft=man nomod nolist' -"
+
