@@ -3,11 +3,12 @@
     email = adrien.brault@gmail.com
 [core]
     excludesfile = ~/.gitignore_global
+    editor = vim
 [alias]
     st = status
     cm = commit
     co = checkout
-	d = difftool
+    d = difftool
 [color]
     ui           = auto
     branch       = auto
@@ -15,8 +16,8 @@
     status       = auto
     interactive  = auto
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [merge]
-	tool = vimdiff
+    tool = vimdiff
 [difftool]
-	prompt = false
+    prompt = false
