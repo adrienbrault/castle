@@ -19,7 +19,6 @@ Bundle 'wincent/Command-T'
 Bundle 'tsaleh/vim-align'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-fugitive'
-Bundle 'vim-scripts/taglist.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'corntrace/bufexplorer'
@@ -100,6 +99,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=black
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
 autocmd VimEnter,Colorscheme * :let g:indent_guides_guide_size = 1
 
+let NERDTreeShowHidden=1 " Show hidden files in NERDTree
 " Mapping
 map <leader>k :NERDTreeToggle<CR>
 
