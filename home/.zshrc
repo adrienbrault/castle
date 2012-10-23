@@ -8,7 +8,7 @@ unsetopt correct_all
 
 plugins=(vi-mode symfony2 github node osx screen sublime vagrant)
 
-export PATH="/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/bin:/usr/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
