@@ -64,7 +64,10 @@ set nocompatible
 
 set cursorline          " Highlight the screen line of the cursor
 set ruler               " Show the line and column number of the cursor position
-set colorcolumn=120     " Draw a line on the 120th column
+
+if has('colorcolumn')
+  set colorcolumn=120     " Draw a line on the 120th column
+endif
 
 " Dislay hidden chars, and configure what's shown
 set list
