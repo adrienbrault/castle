@@ -3,6 +3,8 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="steeef"
 CASE_SENSITIVE="true"
 
+alias vi="vim"
+
 # Disable autocorrection
 unsetopt correct_all
 
