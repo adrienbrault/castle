@@ -96,6 +96,20 @@ set noswapfile
 
 inoremap <C-Return> <CR><CR><C-o>k<Tab>
 
+" Tab navigation
+nnoremap th  :tabfirst<CR>
+nnoremap tk  :tabnext<CR>
+nnoremap tj  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnext<Space>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+" Alternatively use
+nnoremap tn :tabnew<CR>
+nnoremap <S-h> gT
+nnoremap <S-l> gt
+
 " Indent guides plugin
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=black
