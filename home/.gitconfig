@@ -1,5 +1,5 @@
 [user]
-	name = Adrien Brault
+    name = Adrien Brault
     email = adrien.brault@gmail.com
 [core]
     excludesfile = ~/.gitignore_global
@@ -21,3 +21,5 @@
     tool = vimdiff
 [difftool]
     prompt = false
+[push]
+    default = current
