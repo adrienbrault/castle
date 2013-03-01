@@ -4,6 +4,9 @@ ZSH_THEME="steeef"
 CASE_SENSITIVE="true"
 
 alias vi="vim"
+alias sf2-wipe="sf2 doctrine:database:drop --force; sf2 doctrine:database:create && sf2 doctrine:migrations:migrate --no-interaction && sf2 doctrine:fixtures:load --no-interaction"
+alias sf2-wipe-test="export SYMFONY_ENV=test; sf2-wipe; unset SYMFONY_ENV"
+alias sf2-wipeall="composer install --dev && sf2 assets:install --symlink web && sf2-wipe && sf2-wipe-test"
 
 # Disable autocorrection
 unsetopt correct_all
