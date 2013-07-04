@@ -9,6 +9,12 @@ alias sf2-wipe="sf2 doctrine:database:drop --force; sf2 doctrine:database:create
 alias sf2-wipe-test="export SYMFONY_ENV=test; sf2-wipe; unset SYMFONY_ENV"
 alias sf2-wipeall="composer install --dev && sf2 assets:install --symlink web && sf2-wipe && sf2-wipe-test"
 
+# Stuff
+export COMPOSER_PROCESS_TIMEOUT=1200
+
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
+
 # Disable autocorrection
 unsetopt correct_all
 
