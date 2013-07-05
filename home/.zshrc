@@ -32,3 +32,6 @@ source $ZSH/oh-my-zsh.sh
 # Open man pages in vim, <3
 export MANPAGER="col -b | view -c 'set ft=man nomod nolist' -"
 
+# phpbrew
+source ~/.phpbrew/bashrc
+
