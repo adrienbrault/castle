@@ -9,6 +9,8 @@ alias sf2-wipe="sf2 doctrine:database:drop --force; sf2 doctrine:database:create
 alias sf2-wipe-test="export SYMFONY_ENV=test; sf2-wipe; unset SYMFONY_ENV"
 alias sf2-wipeall="composer install --dev && sf2 assets:install --symlink web && sf2-wipe && sf2-wipe-test"
 
+alias canary-nossl="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --ignore-certificate-errors"
+
 # Stuff
 export COMPOSER_PROCESS_TIMEOUT=1200
 
@@ -18,12 +20,14 @@ bindkey "^[[B" history-search-forward
 # Disable autocorrection
 unsetopt correct_all
 
-plugins=(vi-mode symfony2 github node osx screen sublime vagrant)
+plugins=(vi-mode symfony2 github node osx screen sublime vagrant zsh-syntax-highlighting)
 
 # Paths
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:$HOME/.composer/vendor/bin
+#export PATH=$PATH:./node_modules/.bin
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # oh .. my ... zsh !
