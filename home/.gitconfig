@@ -1,8 +1,8 @@
 [user]
-    name = Adrien Brault
-    email = adrien.brault@gmail.com
+	name = Adrien Brault
+	email = adrien.brault@gmail.com
 [core]
-    excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore_global
     editor = vim
 [alias]
     st = status

@@ -9,8 +9,6 @@ alias sf2-wipe="sf2 doctrine:database:drop --force; sf2 doctrine:database:create
 alias sf2-wipe-test="export SYMFONY_ENV=test; sf2-wipe; unset SYMFONY_ENV"
 alias sf2-wipeall="composer install --dev && sf2 assets:install --symlink web && sf2-wipe && sf2-wipe-test"
 
-alias canary-nossl="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --ignore-certificate-errors"
-
 # Stuff
 export COMPOSER_PROCESS_TIMEOUT=1200
 
@@ -30,6 +28,9 @@ export PATH=$PATH:$HOME/.composer/vendor/bin
 #export PATH=$PATH:./node_modules/.bin
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# Show time for every command that take longer than 5s
+export REPORTTIME=5
+
 # oh .. my ... zsh !
 source $ZSH/oh-my-zsh.sh
 
@@ -37,5 +38,9 @@ source $ZSH/oh-my-zsh.sh
 export MANPAGER="col -b | view -c 'set ft=man nomod nolist' -"
 
 # phpbrew
-source ~/.phpbrew/bashrc
+# source ~/.phpbrew/bashrc
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
+
+export NVM_DIR="/Users/adrienbrault/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
